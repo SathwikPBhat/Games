@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: #7EB2DD;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    gap:2rem;
+    color:#204B57;
+}
+
+.calculator{
+    background-color: #474350;
+    width:70vh;
+    height:70vh;
+    margin:auto;
+    border-radius: 1rem;
+    padding:1.5rem;
+    box-shadow:0 0 2rem rgba(0,0,0,0.3);
+    
+}
+
+.calculator .display{
+    height:4.5rem;
+    border: 0.1rem solid #FCB0B3;
+    border-radius: 1rem;
+    padding:1.5rem;
+    color:white;
+    text-align: right;
+    margin-bottom: 0.7rem;
+    box-shadow: 0 0 0.23rem #FCECC9;
+}
+.calculator .buttons{
+    height:5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    padding-left:3rem ;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
+.calculator .buttons div{
+    padding:0.5rem;
+    border: 0.1rem solid #FCB0B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.8rem;
+    width:3.8rem;
+    border-radius: 50%;
+    background-color: #FCECC9;
+    box-shadow: 0 0 0.23rem #FCECC9;
+}
+.calculator .buttons .operator{
+   background-color:#204B57;
+    color:#fff;
+}
+.calculator .buttons div:hover{
+    cursor: pointer;
+    border:0.15rem solid #7EB2DD;
+}
